@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:background="@android:color/holo_blue_bright"
     tools:context=".DashboardActivity">
 
@@ -23,5 +24,12 @@
         android:layout_height="wrap_content"
         android:text="Arithmetic"
         android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/btnSimpleInterest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Interest"
+        android:layout_margin="20dp"
+        />
 
 </LinearLayout>

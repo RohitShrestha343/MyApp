@@ -4,48 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
-    tools:context=".ArithmeticActivity">
+    android:orientation="vertical"
+    tools:context=".SimpleIntActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Interest"
+        android:layout_margin="20dp"/>
     <EditText
-        android:id="@+id/etArithmeticFirst"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:hint="Enter First no" />
-
+        android:hint="Enter the Principal"
+        android:id="@+id/etPrincipal"
+        />
     <EditText
-        android:id="@+id/etArithmeticSecond"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:hint="Enter Second no" />
-<RadioGroup
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <RadioButton
-        android:id="@+id/rdoSum"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="SUM"
-        android:textSize="15sp"
+        android:hint="Enter the Rate"
+        android:id="@+id/etRate"
         />
-    <RadioButton
-        android:id="@+id/rdoSubtract"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Subtract"
-        android:textSize="15sp"
+        android:hint="Enter the Time"
+        android:id="@+id/etTime"
         />
-</RadioGroup>
     <Button
-        android:id="@+id/btnCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Calculate Interest"
         android:layout_margin="20dp"
-        android:background="@color/colorPrimary"
-        android:text="Calculate" />
+        android:id="@+id/btnInterest"
+        />
+
 </LinearLayout>

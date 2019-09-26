@@ -11,7 +11,7 @@ import android.widget.Switch;
 public class DashboardActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    private Button btnSum,btnArithmetic;
+    private Button btnSum,btnArithmetic,btnSimpleInterest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +20,13 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
         btnSum = findViewById(R.id.btnSum);
         btnArithmetic = findViewById(R.id.btnArithmetic);
+        btnSimpleInterest=findViewById(R.id.btnSimpleInterest);
+
 
         btnSum.setOnClickListener(this);
         btnArithmetic.setOnClickListener(this);
+        btnSimpleInterest.setOnClickListener(this);
+
     }
 
     @Override
@@ -31,12 +35,16 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         switch (v.getId()) {
             case R.id.btnSum:
                 intent = new Intent(DashboardActivity.this, MainActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.btnArithmetic:
                 intent = new Intent(DashboardActivity.this, ArithmeticActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.btnSimpleInterest:
+                intent= new Intent(DashboardActivity.this, SimpleIntActivity.class);
+                startActivity(intent);
 
         }
         startActivity(intent);
